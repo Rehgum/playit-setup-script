@@ -15,7 +15,7 @@ arch=$( uname -m )
 distro=$( grep --colour=never -Po '(?<=^ID_LIKE=).*$' /etc/os-release )
 
 name=""
-playit_path=""
+playit_path="./playit-linux-amd64"
 
 case $1 in
     --service-only)
