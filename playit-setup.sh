@@ -92,13 +92,15 @@ It will not work!  So we're just going to delete it for you.\n"
                 printf "\n\033[04========m\033[01mDownloading latest binary\033[00m\033[04========\033[00m\n"
                 case $arch in
                     x86_64)
-                        wget "https://github.com/playit-cloud/playit-agent/releases/v$playit_version/playit-$playit_version"
+                        #https://github.com/playit-cloud/playit-agent/releases/v0.15.26/playit-linux-amd64
+                        wget "https://github.com/playit-cloud/playit-agent/releases/v$playit_version/playit-linux-amd64"
                         chmod +x "./playit-$playit_version"
                         name="playit-$playit_version"
                         playit_path=$( pwd )
                     ;;
                     armv7l)
-                        wget https://github.com/playit-cloud/playit-agent/releases/v$playit_version/playit-$playit_version-armv7
+                        #https://github.com/playit-cloud/playit-agent/releases/v0.15.26/playit-linux-armv7
+                        wget https://github.com/playit-cloud/playit-agent/releases/v$playit_version/playit-linux-armv7
                         chmod +x "./playit-$playit_version-armv7"
                         name="playit-$playit_version-armv7"
                         playit_path=$( pwd )
