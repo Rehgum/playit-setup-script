@@ -94,15 +94,15 @@ It will not work!  So we're just going to delete it for you.\n"
                     x86_64)
                         #https://github.com/playit-cloud/playit-agent/releases/v0.15.26/playit-linux-amd64
                         wget "https://github.com/playit-cloud/playit-agent/releases/v$playit_version/playit-linux-amd64"
-                        chmod +x "./playit-$playit_version"
-                        name="playit-$playit_version"
+                        chmod +x "./playit-linux-amd64"
+                        name="playit-linux-amd64"
                         playit_path=$( pwd )
                     ;;
                     armv7l)
                         #https://github.com/playit-cloud/playit-agent/releases/v0.15.26/playit-linux-armv7
                         wget https://github.com/playit-cloud/playit-agent/releases/v$playit_version/playit-linux-armv7
-                        chmod +x "./playit-$playit_version-armv7"
-                        name="playit-$playit_version-armv7"
+                        chmod +x "./playit-linux-armv7"
+                        name="playit-linux-armv7"
                         playit_path=$( pwd )
                     ;;
                 esac
